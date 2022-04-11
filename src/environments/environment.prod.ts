@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  baseUrl: "https://meowing-heavenly-vase.glitch.me/"
+  baseUrl: "https://fake-rest.glitch.me/"
 };

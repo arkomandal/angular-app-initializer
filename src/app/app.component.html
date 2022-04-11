@@ -1,11 +1,17 @@
-<h3>List of movies</h3>
-<table>
-  <tr>
-    <th>Name of the movie</th>
-    <th>Year of Release</th>
-  </tr>
-  <tr *ngFor="let movie of data">
-    <th>{{movie.name}}</th>
-    <th>{{movie.release}}</th>
-  </tr>
-</table>
+<div class="container">
+  <h3 class="header">List of movies</h3>
+  <table class="table">
+    <thead class="table-header">
+      <tr>
+        <th>Movie</th>
+        <th>Release</th>
+      </tr>
+    </thead>
+    <tbody class="table-body">
+      <tr *ngFor="let movie of data">
+        <td>{{movie.movie}}</td>
+        <td>{{movie.release}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

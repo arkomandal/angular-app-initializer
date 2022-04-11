@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SubjectsService } from './subjects.service';
+import { IMovie } from './movie';
 
 @Component({
   selector: 'app-root',
@@ -8,13 +9,13 @@ import { SubjectsService } from './subjects.service';
 })
 export class AppComponent implements OnInit {
 
-  data = [];
+  data: IMovie = null;
 
   constructor(private subjectsService: SubjectsService) {
   }
 
   ngOnInit(): void {
-    this.subjectsService.getData().subscribe(data => {
+    this.subjectsService.getData().subscribe((data: IMovie) => {
       this.data = data;
     });
   }
