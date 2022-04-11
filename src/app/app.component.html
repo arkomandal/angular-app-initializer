@@ -3,12 +3,14 @@
   <table class="table">
     <thead class="table-header">
       <tr>
+        <th>Id</th>
         <th>Movie</th>
         <th>Release</th>
       </tr>
     </thead>
     <tbody class="table-body">
       <tr *ngFor="let movie of data">
+        <td>{{movie.id}}</td>
         <td>{{movie.movie}}</td>
         <td>{{movie.release}}</td>
       </tr>
