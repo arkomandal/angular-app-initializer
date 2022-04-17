@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: "https://fake-rest.glitch.me/"
+  baseUrl: "https://api.arkomandal.com/fake-rest/"
 };
 
 /*
